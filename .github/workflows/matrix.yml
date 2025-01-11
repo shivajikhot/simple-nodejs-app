@@ -17,5 +17,5 @@ jobs:
         with:
           node-version: ${{matrix.node}}
       - name: print the os
-        run: echo "os used ${{matrix.os}}
-      - run: echo "node used ${{matrix.node}}       
+        run: echo "os used ${{matrix.os}}"
+      - run: echo "node used ${{matrix.node}}"    
