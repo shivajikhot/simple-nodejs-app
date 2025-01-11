@@ -8,7 +8,7 @@ jobs:
     strategy:
       matrix:
         os: 
-         - ubuntu-lates
+         - ubuntu-latest
          - windows-latest
         node: [14,16]
     steps:
