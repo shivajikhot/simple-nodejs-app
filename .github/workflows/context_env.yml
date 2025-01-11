@@ -1,7 +1,7 @@
 name: context env
 
 on:
-  push
+  push:
 env:
   my_first: shivaji
 jobs:
