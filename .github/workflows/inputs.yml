@@ -1,0 +1,27 @@
+name: context inputs
+run-name: debug | DEBUG - ${{ inputs.debug }}
+
+
+on:
+ workflow_dispatch:
+   inputs:
+     debug:
+       type: boolean
+       default: false
+jobs:
+  context:
+    runs-on: ${{matrix.os}}
+    strategy:
+      matrix:
+        os: 
+         - ubuntu-latest
+         - windows-latest
+        node: [14,16]
+    steps:
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v4.1.0
+        with:
+          node-version: ${{matrix.node}}
+      - name: print the os
+        run: echo "os used ${{matrix.os}}"
+      - run: echo "node used ${{matrix.node}}"    
