@@ -1,0 +1,17 @@
+name: context variable
+
+on:
+  push:
+env:
+  my_first: ${{vars.name}}
+jobs:
+  context:
+    runs-on: ubuntu-latest
+    env:
+      my_full: shivaji_khot
+    steps:
+    - name: uses of env
+      env:
+        my_last: khot
+      run: |
+        echo "my_first name is ${{ env.my_first }}
