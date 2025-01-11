@@ -2,12 +2,13 @@ name: context variable
 
 on:
   push:
-env:
-  my_first: ${{vars.name}}
+
 jobs:
   context:
     runs-on: ubuntu-latest
     steps:
-    - name: uses of env
+    - name: uses of variable
+      env:
+        my_first: ${{vars.name}}
       run: |
         echo "my_first name is ${{ env.my_first }}
