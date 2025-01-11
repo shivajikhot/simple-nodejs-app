@@ -12,3 +12,4 @@ jobs:
         my_first: ${{ vars.name }}
       run: |
         echo "my_first name is ${{ env.my_first }}
+        echo "variable name is ${{ vars.name }}
