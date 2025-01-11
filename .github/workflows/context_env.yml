@@ -3,15 +3,17 @@ name: context env
 on:
   push
 env:
-  my_name: shivaji
+  my_first: shivaji
 jobs:
   context:
     runs-on: ubuntu-latest
     env:
-      my_name: shivaji_khot
+      my_full: shivaji_khot
     steps:
-    - name: eses of env
+    - name: uses of env
       env:
-        my_name: khot
+        my_last: khot
       run: |
-        echo "my_name ${{env.my_name}}
+        echo "my_name ${{env.my_first}}
+        echo "my_name ${{env.my_last}}
+        echo "my_name ${{env.full}}
