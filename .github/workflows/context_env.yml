@@ -1,0 +1,17 @@
+name: context env
+
+on:
+  push
+env:
+  my_name: shivaji
+jobs:
+  context:
+    runs-on: ububntu-latest
+    env:
+      my_name: shivaji_khot
+    steps:
+    - name: eses of env
+      env:
+        my_name: khot
+      run: |
+        echo "my_name ${{env.my_name}}
