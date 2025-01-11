@@ -1,4 +1,4 @@
-name: aws self hosted
+name: contexts-github
 
 on:
  push
