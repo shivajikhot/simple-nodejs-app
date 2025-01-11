@@ -1,0 +1,21 @@
+name: context matrix
+
+on:
+ push
+jobs:
+  context:
+    runs-on: ${{matrix.os}}
+    strategy:
+      matrix:
+        os: 
+         - ubuntu-lates
+         - windows-latest
+        node: [14,16]
+    steps:
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v4.1.0
+        with:
+          node-version: ${{matrix.node}}
+      - name: print the os
+        run: echo "os used ${{matrix.os}}
+      - run: echo "node used ${{matrix.node}}       
