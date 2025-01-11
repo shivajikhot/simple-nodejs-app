@@ -16,4 +16,4 @@ jobs:
       run: |
         echo "my_first name is ${{ env.my_first }}
         echo "my_last name is ${{ env.my_last }}
-        echo "my_full name ${{ env.full }}
+        echo "my_full name ${{ env.my_full }}
