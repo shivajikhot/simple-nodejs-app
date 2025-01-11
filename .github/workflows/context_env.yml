@@ -14,6 +14,6 @@ jobs:
       env:
         my_last: khot
       run: |
-        echo "my_name ${{env.my_first}}
-        echo "my_name ${{env.my_last}}
-        echo "my_name ${{env.full}}
+        echo "my_first name is ${{ env.my_first }}
+        echo "my_last name is ${{ env.my_last }}
+        echo "my_full name ${{ env.full }}
