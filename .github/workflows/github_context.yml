@@ -1,0 +1,18 @@
+name: aws self hosted
+
+on:
+ push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+     - run: |
+        echo "event name ${{github.event_name}}
+        echo "workflow name ${{github.workflow}}
+        echo "sha value ${{github.sha}}
+        echo "reference ${{github.ref}}
+        echo "workflow sha value ${{github.workflow_sha}}
+        echo "actor name ${{github.actor}}
+        echo "runner id ${{github.run_id}}
+        echo "runnner number ${{github.run_number}}
