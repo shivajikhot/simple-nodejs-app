@@ -6,7 +6,7 @@ env:
   my_name: shivaji
 jobs:
   context:
-    runs-on: ububntu-latest
+    runs-on: ubuntu-latest
     env:
       my_name: shivaji_khot
     steps:
