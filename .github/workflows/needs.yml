@@ -1,0 +1,15 @@
+name: context needs
+
+on:
+  push
+jobs:
+  build: 
+    runs-on: ubuntu-latest
+    steps:
+    - run: echo "the build job is successful completed"
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+     - run: echo "deploy job is completed"
