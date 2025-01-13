@@ -1,0 +1,20 @@
+name: Environment 
+
+run-name: environment name is ${{inputs.Environment}}
+
+on:
+  workflow_dispatch:
+    inputs:
+      Environment:
+        type: environment
+        default: devolpment
+
+jobs:
+  environment:
+    runs-on: ubuntu-latest
+    environment: ${{ inputs.Environment}}
+    steps:
+      - name: name of the environment
+        run: echo " name of variable ${{vars.staging}}
+      - run: echo "name of the secrets ${{secrets.staging}} 
+  
