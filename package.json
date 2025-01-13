@@ -1,8 +1,11 @@
 {
-  "name": "simple-nodejs-app",
+  "name": "@shivajikhot/simple-nodejs-app",
   "version": "1.0.0",
   "description": "Research about a person",
   "main": "index.js",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+}
   "scripts": {
     "start": "node index.js",
     "build": "echo 'Build is complited for nodejs!'"
