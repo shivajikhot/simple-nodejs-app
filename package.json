@@ -5,7 +5,7 @@
   "main": "index.js",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
-}
+},
   "scripts": {
     "start": "node index.js",
     "build": "echo 'Build is complited for nodejs!'"
